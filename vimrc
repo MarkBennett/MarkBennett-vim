@@ -54,15 +54,22 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 colorscheme vividchalk
 
 " Tab mappings.
-map <leader>tt :tabnew<cr>
-map <leader>te :tabedit
-map <leader>tc :tabclose<cr>
-map <leader>to :tabonly<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprevious<cr>
-map <leader>tf :tabfirst<cr>
-map <leader>tl :tablast<cr>
-map <leader>tm :tabmove
+"map <leader>tt :tabnew<cr>
+"map <leader>te :tabedit
+"map <leader>tc :tabclose<cr>
+"map <leader>to :tabonly<cr>
+"map <leader>tn :tabnext<cr>
+"map <leader>tp :tabprevious<cr>
+"map <leader>tf :tabfirst<cr>
+"map <leader>tl :tablast<cr>
+"map <leader>tm :tabmove
+
+" NERDTree mappings
+map <leader>n :NERDTreeToggle<cr>
+
+" Taglist mappings
+map <leader>T :TlistToggle<cr>
+map <leader>trr :TlistAddFilesRecursive . *.rb<cr>
 
 " Preserve selection after indentation
 vmap > >gv
@@ -83,5 +90,5 @@ vmap <S-Tab> <gv
 "vnoremap : ;
 
 " Automatic fold settings for specific files. Uncomment to use.
-autocmd FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
+autocmd FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
