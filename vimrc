@@ -70,6 +70,7 @@ map <leader>n :NERDTreeToggle<cr>
 " Taglist mappings
 map <leader>T :TlistToggle<cr>
 map <leader>trr :TlistAddFilesRecursive . *.rb<cr>
+map <leader>trp :TlistAddFilesRecursive . *.py<cr>
 
 " Preserve selection after indentation
 vmap > >gv
@@ -89,6 +90,10 @@ vmap <S-Tab> <gv
 "vnoremap ; :
 "vnoremap : ;
 
+" Add custom filetypes
+au BufNewFile,BufRead *.io set filetype=io
+
 " Automatic fold settings for specific files. Uncomment to use.
 autocmd FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
+autocmd FileType io setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
