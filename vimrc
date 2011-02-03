@@ -95,5 +95,7 @@ au BufNewFile,BufRead *.io set filetype=io
 
 " Automatic fold settings for specific files. Uncomment to use.
 autocmd FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
+autocmd FileType javascript setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
 autocmd FileType io setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+autocmd FileType html  setlocal foldmethod=indent shiftwidth=2 tabstop=2
