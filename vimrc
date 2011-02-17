@@ -101,3 +101,7 @@ autocmd FileType ant setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
 autocmd FileType io setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 autocmd FileType html  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+
+" Move my swap files out from beside the files themselves
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
