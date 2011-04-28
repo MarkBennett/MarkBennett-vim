@@ -92,6 +92,7 @@ vmap <S-Tab> <gv
 
 " Add custom filetypes
 au BufNewFile,BufRead *.io set filetype=io
+au BufNewFile,BufRead Vagrantfile set filetype=ruby
 
 " Automatic fold settings for specific files. Uncomment to use.
 autocmd FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
