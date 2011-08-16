@@ -106,3 +106,10 @@ autocmd FileType html  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 " Move my swap files out from beside the files themselves
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
+" Highlight the 80th column to prevent long lines
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
