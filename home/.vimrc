@@ -95,13 +95,13 @@ au BufNewFile,BufRead *.io set filetype=io
 au BufNewFile,BufRead Vagrantfile set filetype=ruby
 
 " Automatic fold settings for specific files. Uncomment to use.
-autocmd FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
-autocmd FileType javascript setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
-autocmd FileType xml setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
-autocmd FileType ant setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
-autocmd FileType io setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=3
+autocmd FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
+autocmd FileType javascript setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
+autocmd FileType xml setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
+autocmd FileType ant setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
+autocmd FileType io setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
-autocmd FileType html  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+autocmd FileType html  setlocal foldmethod=syntax shiftwidth=2 tabstop=2
 
 " Move my swap files out from beside the files themselves
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
