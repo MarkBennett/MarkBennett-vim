@@ -10,3 +10,6 @@
 [submodule "home/.vim/bundle/jshint"]
 	path = home/.vim/bundle/jshint
 	url = https://github.com/walm/jshint.vim.git
+[submodule "home/.vim/bundle/snipmate.vim"]
+	path = home/.vim/bundle/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
