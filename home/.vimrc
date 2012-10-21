@@ -97,7 +97,7 @@ au BufNewFile,BufRead *.dart set filetype=dart
 
 " Automatic fold settings for specific files. Uncomment to use.
 autocmd FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=4
-autocmd FileType javascript setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=5
+autocmd FileType javascript setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=5 omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType xml setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
 autocmd FileType ant setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
 autocmd FileType io setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
