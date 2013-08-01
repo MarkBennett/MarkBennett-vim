@@ -96,6 +96,7 @@ au BufNewFile,BufRead Vagrantfile,Guardfile set filetype=ruby
 au BufNewFile,BufRead *.dart set filetype=dart
 au BufNewFile,BufRead *.mustache set filetype=mustache
 au BufNewFile,BufRead *.json set filetype=json
+au BufNewFile,BufRead *.html.erb set filetype=html
 
 " Automatic fold settings for specific files. Uncomment to use.
 autocmd FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab foldlevel=4
