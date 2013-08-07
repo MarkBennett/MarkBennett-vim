@@ -105,7 +105,8 @@ autocmd FileType json setlocal foldmethod=syntax tabstop=4 shiftwidth=4 expandta
 autocmd FileType xml setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
 autocmd FileType ant setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
 autocmd FileType io setlocal foldmethod=syntax tabstop=2 shiftwidth=2 expandtab
-autocmd FileType css setlocal foldmethod=indent shiftwidth=2 tabstop=2
+autocmd FileType css setlocal foldmethod=indent shiftwidth=2 tabstop=2 expandtab
+autocmd FileType scss setlocal foldmethod=indent shiftwidth=2 tabstop=2 expandtab
 autocmd FileType html setlocal foldmethod=syntax shiftwidth=2 tabstop=2 expandtab
 autocmd FileType dart setlocal foldmethod=syntax shiftwidth=2 tabstop=2 expandtab
 autocmd FileType sh setlocal foldmethod=syntax shiftwidth=2 tabstop=2 expandtab
