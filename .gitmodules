@@ -28,3 +28,6 @@
 [submodule "home/.vim/bundle/vim-localrc"]
 	path = home/.vim/bundle/vim-localrc
 	url = https://github.com/inkarkat/vim-localrc.git
+[submodule "home/.vim/bundle/rust.vim"]
+	path = home/.vim/bundle/rust.vim
+	url = git://github.com/wting/rust.vim.git
